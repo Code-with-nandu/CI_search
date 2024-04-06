@@ -1,11 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
-
-
+class TestController extends CI_Controller {
+	public function __construct()
+    {
+        parent::__construct();
+		$this->load->model('TestModel');
+    }
 	public function index()
 	{
-		$this->load->view('TestView.php');
+		$key= $this->input->post('key',true);
+		$data['store']=$this->TestModel->set($key);
+		$this->load->view('TestView.php',$data);
 	}
 }
