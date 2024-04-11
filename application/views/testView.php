@@ -33,7 +33,7 @@
                     <h5 class="card-title"><?php echo $key->name ?></h5>
                     <p class="card-text"><?php echo $key->description ?></p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    
                 </div>
             </div>
 

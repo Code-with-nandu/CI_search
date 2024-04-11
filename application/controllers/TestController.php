@@ -12,5 +12,6 @@ class TestController extends CI_Controller {
 		$key= $this->input->post('key',true);
 		$data['store']=$this->TestModel->set($key);
 		$this->load->view('TestView.php',$data);
+		$this->load->view('TestView.php',$data);
 	}
 }
