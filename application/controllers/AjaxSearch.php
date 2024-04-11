@@ -16,5 +16,9 @@ class AjaxSearch extends CI_Controller{
         {
             $query = $this->input->post('query');
         }
+        $data = $this ->ajaxsearch_model->fetch_data($query);
+        $output.='
+        <div class="table-responsive"></div>
+        ';
     }
 }
